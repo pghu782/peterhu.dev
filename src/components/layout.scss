@@ -2,6 +2,10 @@
 $orange-theme: #ff745cef;
 $grey-theme: rgb(85, 85, 85);
 
+$screen-desktop: 992px;
+$screen-tablet: 768px;
+$screen-mobile: 767px;
+
 html {
   font-family: sans-serif;
   font-size: 16px;
@@ -68,27 +72,26 @@ header {
 .header-left__text--orange {
   color: $orange-theme;
 
-  // background: linear-gradient(red, blue);
-  // background-clip: text;
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
-  animation: 4s text-flash;
+  background-image: linear-gradient(
+    90deg,
+    $orange-theme 25%,
+    #fde071 37.5%,
+    white,
+    #f7e0ae 62.5%,
+    $orange-theme 75%
+  );
+
+  background-position: right center;
+  background-size: 400% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: color 200ms linear;
 
   &:hover {
-    background: linear-gradient(white, grey);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
-
-@keyframes text-flash {
-  0%,
-  100% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 100% 0;
+    background-position: left center;
+    transition: background-position 2000ms ease-out;
+    color: white; //fallback
   }
 }
 
@@ -123,7 +126,23 @@ footer {
 }
 
 .project-container {
-  width: 950px;
   padding: 2rem;
   margin-bottom: 1rem;
+  width: 100%;
+
+  & > div {
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 950px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding: 1rem;
+
+    & > div {
+      padding: 0;
+    }
+  }
 }

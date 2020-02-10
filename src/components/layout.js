@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div class="body-container container">
+      <div className="body-container container">
         <main>{children}</main>
       </div>
       <footer>© {new Date().getFullYear()} Peter Hu</footer>
@@ -30,5 +30,4 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-
 export default Layout

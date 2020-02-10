@@ -1,0 +1,39 @@
+@import "../layout.scss";
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.95);
+  height: 100vh;
+  padding: 6rem 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
+  width: 100%;
+
+  &.hidden {
+    transform: translateX(100%);
+  }
+
+  & > div:not(:first-child) {
+    margin-top: 0.5rem;
+  }
+
+  a {
+    padding-top: 0.25rem;
+    margin-left: 1rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    color: $grey-theme;
+    text-decoration: none;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: lightgrey;
+    }
+  }
+}
