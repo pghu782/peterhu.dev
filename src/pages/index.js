@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/Seo/seo"
+import spectre from "../images/front_spectre.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -9,7 +10,9 @@ const IndexPage = () => (
 
     <div className="d-flex justify-content-center mt-5">
       <div className="card description-container">
-        <h4 className="mb-4">Hey there!</h4>
+        <div className="text-center mb-3">
+          <img src={spectre} alt="Spectre Keyboard" />
+        </div>
         <div className="mb-4">
           I'm a full stack developer currently working in the Edmonton, Alberta
           area. Currently developing and dreaming CRUD projects. Feel free to

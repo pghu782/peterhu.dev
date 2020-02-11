@@ -1,10 +1,4 @@
-/* Variables */
-$orange-theme: #ff745cef;
-$grey-theme: rgb(85, 85, 85);
-
-$screen-desktop: 992px;
-$screen-tablet: 768px;
-$screen-mobile: 767px;
+@import "../assets/variables";
 
 /* Styles */
 html {
@@ -151,10 +145,12 @@ footer {
 }
 
 .description-container {
-  // background-color: white;
-  // border: 2px solid $grey-theme;
   max-width: 750px;
   padding: 2rem;
+
+  img {
+    width: 80%;
+  }
 }
 
 .project-container {
