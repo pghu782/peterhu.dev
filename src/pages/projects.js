@@ -5,7 +5,7 @@ import "react-medium-image-zoom/dist/styles.css"
 // import { Desktop, Tablet, Mobile } from "../components/media-query/media-query"
 import { useMediaQuery } from "react-responsive"
 
-import Layout from "../components/Layout"
+import Layout from "../components/Layout/Layout"
 import SEO from "../components/Seo/Seo"
 
 /* Images */
