@@ -6,6 +6,7 @@ $screen-desktop: 992px;
 $screen-tablet: 768px;
 $screen-mobile: 767px;
 
+/* Styles */
 html {
   font-family: sans-serif;
   font-size: 16px;
@@ -65,8 +66,6 @@ header {
     width: 1.75rem;
     fill: $grey-theme;
   }
-}
-.header-left {
 }
 
 .header-left__text--orange {
