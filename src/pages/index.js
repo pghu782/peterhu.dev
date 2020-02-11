@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/Seo/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/Seo/Seo"
 import spectre from "../images/front_spectre.jpg"
 
 const IndexPage = () => (
