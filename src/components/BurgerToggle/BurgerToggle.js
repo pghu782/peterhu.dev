@@ -16,4 +16,4 @@ BurgerToggle.propTypes = {
   setOpen: func.isRequired,
 }
 
-export { BurgerToggle }
+export default BurgerToggle

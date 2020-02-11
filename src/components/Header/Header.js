@@ -11,7 +11,7 @@ import Image from "react-bootstrap/Image"
 import BurgerToggle from "../BurgerToggle/BurgerToggle"
 import MobileMenu from "../MobileMenu/MobileMenu"
 import { Desktop, Mobile } from "../MediaQueries/MediaQueries"
-import useOnClickOutside from "../Hooks"
+import { useOnClickOutside } from "../Hooks"
 
 const Header = ({ siteTitle }) => {
   const [open, setOpen] = useState(false)
