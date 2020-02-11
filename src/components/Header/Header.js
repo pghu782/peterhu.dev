@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai"
 import headshot from "../../images/headshot_small.jpg"
 import Image from "react-bootstrap/Image"
-import Burger from "../Burger/Burger"
+import BurgerToggle from "../BurgerToggle/BurgerToggle"
 import MobileMenu from "../MobileMenu/MobileMenu"
 import { Desktop, Mobile } from "../MediaQueries/MediaQueries"
 import useOnClickOutside from "../Hooks"
@@ -74,7 +74,7 @@ const Header = ({ siteTitle }) => {
         </Desktop>
         <Mobile>
           <div ref={node}>
-            <Burger open={open} setOpen={setOpen}></Burger>
+            <BurgerToggle open={open} setOpen={setOpen}></BurgerToggle>
             <MobileMenu open={open} setOpen={setOpen}></MobileMenu>
           </div>
         </Mobile>

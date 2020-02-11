@@ -1,9 +1,9 @@
 import { bool, func } from "prop-types"
 import React from "react"
 
-import "./Burger.scss"
+import "./BurgerToggle.scss"
 
-const Burger = ({ open, setOpen }) => (
+const BurgerToggle = ({ open, setOpen }) => (
   <button className="burger" open={open} onClick={() => setOpen(!open)}>
     <div></div>
     <div></div>
@@ -11,9 +11,9 @@ const Burger = ({ open, setOpen }) => (
   </button>
 )
 
-Burger.propTypes = {
+BurgerToggle.propTypes = {
   open: bool.isRequired,
   setOpen: func.isRequired,
 }
 
-export default Burger
+export { BurgerToggle }
