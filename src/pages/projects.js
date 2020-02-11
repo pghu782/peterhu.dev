@@ -1,11 +1,12 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 import Zoom from "react-medium-image-zoom"
 import "react-medium-image-zoom/dist/styles.css"
 
 // import { Desktop, Tablet, Mobile } from "../components/media-query/media-query"
 import { useMediaQuery } from "react-responsive"
+
+import Layout from "../components/layout"
+import SEO from "../components/Seo/seo"
 
 /* Images */
 import morninbytes from "../images/MorninBytes.png"

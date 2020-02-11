@@ -1,11 +1,12 @@
 import React from "react"
 import { bool } from "prop-types"
-import "./mobile-menu.scss"
 import {
   AiOutlineMail,
   AiOutlineLinkedin,
   AiOutlineGithub,
 } from "react-icons/ai"
+
+import "./MobileMenu.scss"
 
 const MobileMenu = ({ open }) => {
   function openLink(url) {

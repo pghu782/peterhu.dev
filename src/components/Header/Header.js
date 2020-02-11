@@ -6,12 +6,12 @@ import {
   AiOutlineLinkedin,
   AiOutlineGithub,
 } from "react-icons/ai"
-import headshot from "../images/headshot_small.jpg"
+import headshot from "../../images/headshot_small.jpg"
 import Image from "react-bootstrap/Image"
-import Burger from "./burger/burger"
-import MobileMenu from "./mobile-menu/mobile-menu"
-import { Desktop, Mobile } from "./media-query/media-query"
-import { useOnClickOutside } from "../utils/hooks"
+import Burger from "../Burger/Burger"
+import MobileMenu from "../MobileMenu/MobileMenu"
+import { Desktop, Mobile } from "../MediaQueries/MediaQueries"
+import { useOnClickOutside } from "../../utils/Hooks"
 
 const Header = ({ siteTitle }) => {
   const [open, setOpen] = useState(false)
@@ -27,26 +27,32 @@ const Header = ({ siteTitle }) => {
     <header>
       <div className="container d-flex justify-content-between">
         <Link to="/">
-          <h1>
-            <Image src={headshot} roundedCircle width="40px" />
-            <span className="header-left__text--orange ml-2">Peter</span>
-            <span className="header-left__text--black-enlarged"> G </span>
-            <span className="header-left__text--orange">Hu</span>
-          </h1>
+          <div className="d-flex">
+            <Image src={headshot} roundedCircle className="header-headshot" />
+            <h1 className="header-left__text d-flex">
+              <span className="header-left__text--orange ml-2">
+                <span>Peter</span>
+                <span className="ml-5">Hu</span>
+              </span>
+              <span className="header-left__text--black-enlarged">G</span>
+            </h1>
+          </div>
         </Link>
         {/* Side Bar - Desktop */}
         <Desktop>
-          <div className="pt-2 mr-2">
-            <button
-              type="button"
-              className="btn btn-circle"
-              onClick={openLink.bind(this, "peterh782@gmail.com")}
-            >
-              <AiOutlineMail />
-            </button>
-            <a href="peterh782@gmail.com" className="header-email ml-1">
-              peterh782@gmail.com
-            </a>
+          <div className="d-flex pt-2 mr-2">
+            <div className="header-email ml-1">
+              <a href="peterh782@gmail.com">
+                <button
+                  type="button"
+                  className="btn btn-circle"
+                  onClick={openLink.bind(this, "peterh782@gmail.com")}
+                >
+                  <AiOutlineMail />
+                </button>
+                <span className="ml-1">peterh782@gmail.com</span>
+              </a>
+            </div>
             <button
               type="button"
               className="btn btn-circle ml-2"

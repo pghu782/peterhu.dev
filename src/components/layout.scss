@@ -68,13 +68,23 @@ header {
   }
 }
 
+.header-headshot {
+  width: 44px;
+  height: 50px;
+}
+
+.header-left__text {
+  position: relative;
+  line-height: 3rem;
+}
+
 .header-left__text--orange {
   color: $orange-theme;
 
   background-image: linear-gradient(
-    90deg,
+    25deg,
     $orange-theme 25%,
-    #fde071 37.5%,
+    #ffdaa2 37.5%,
     white,
     #f7e0ae 62.5%,
     $orange-theme 75%
@@ -89,21 +99,44 @@ header {
 
   &:hover {
     background-position: left center;
-    transition: background-position 2000ms ease-out;
+    transition: background-position 1000ms ease-out;
     color: white; //fallback
   }
 }
 
 .header-left__text--black-enlarged {
   color: $grey-theme;
-  font-size: 2.7rem;
-  margin-left: -5px;
-  margin-right: -5px;
+  font-size: 3.05rem;
+  position: absolute;
+  right: 3.7rem;
+  bottom: 2px;
 }
 
 .header-email {
-  text-decoration: none;
-  color: $grey-theme;
+  display: inline-block;
+
+  a {
+    text-decoration: none;
+    color: $grey-theme;
+  }
+
+  &:hover,
+  &:focus {
+    a {
+      color: $orange-theme;
+      transition: color 0.5s ease-in;
+    }
+
+    .btn-circle {
+      border-color: $orange-theme;
+      transition: border-color 0.5s ease-in;
+
+      svg {
+        fill: $orange-theme;
+        transition: fill 0.5s ease-in;
+      }
+    }
+  }
 }
 
 footer {
