@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState, useRef } from "react"
 import {
+  AiOutlineCode,
   AiOutlineMail,
   AiOutlineLinkedin,
   AiOutlineGithub,
@@ -42,34 +43,41 @@ const Header = ({ siteTitle }) => {
         <Desktop>
           <div className="d-flex pt-2 mr-2">
             <div className="header-email ml-1">
-              <a href="peterh782@gmail.com">
-                <button
-                  type="button"
-                  className="btn btn-circle"
-                  onClick={openLink.bind(this, "peterh782@gmail.com")}
-                >
+              <Link to="/projects/">
+                <button type="button" className="btn btn-circle ml-2">
+                  <AiOutlineCode />
+                </button>
+                <span className="ml-1">Projects</span>
+              </Link>
+            </div>
+            <div className="ml-2">
+              <a href="mailto: peterh782@gmail.com">
+                <button type="button" className="btn btn-circle">
                   <AiOutlineMail />
                 </button>
-                <span className="ml-1">peterh782@gmail.com</span>
               </a>
             </div>
-            <button
-              type="button"
-              className="btn btn-circle ml-2"
-              onClick={openLink.bind(
-                this,
-                "https://www.linkedin.com/in/peter-hu-p-eng-57450071/"
-              )}
-            >
-              <AiOutlineLinkedin />
-            </button>
-            <button
-              type="button"
-              className="btn btn-circle ml-2"
-              onClick={openLink.bind(this, "https://github.com/peterghu")}
-            >
-              <AiOutlineGithub />
-            </button>
+            <div className="ml-2">
+              <button
+                type="button"
+                className="btn btn-circle"
+                onClick={openLink.bind(
+                  this,
+                  "https://www.linkedin.com/in/peter-hu-p-eng-57450071/"
+                )}
+              >
+                <AiOutlineLinkedin />
+              </button>
+            </div>
+            <div>
+              <button
+                type="button"
+                className="btn btn-circle ml-2"
+                onClick={openLink.bind(this, "https://github.com/peterghu")}
+              >
+                <AiOutlineGithub />
+              </button>
+            </div>
           </div>
         </Desktop>
         <Mobile>

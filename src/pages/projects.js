@@ -22,18 +22,6 @@ const ProjectPage = () => {
     <Layout>
       <SEO title="Projects" />
       <div className="align-items-center d-flex flex-column mt-4">
-        {/* Intro */}
-        <div className="card project-container d-flex flex-wrap">
-          For the source code of all this stuff (except FATE), check out my
-          Github:&nbsp;
-          <a
-            href="https://github.com/peterghu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/peterghu
-          </a>
-        </div>
         {/* MorninBytes */}
         <div className="card project-container d-flex flex-wrap flex-row">
           <div className="col-sm-6">

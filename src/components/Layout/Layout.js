@@ -18,6 +18,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <link
+        href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+        rel="stylesheet"
+      ></link>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="body-container container">
         <main>{children}</main>

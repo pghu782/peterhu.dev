@@ -10,28 +10,28 @@ const IndexPage = () => (
 
     <div className="d-flex justify-content-center mt-5">
       <div className="card description-container">
-        <div className="text-center mb-3">
+        <div className="text-center mb-4">
           <img src={spectre} alt="Spectre Keyboard" />
         </div>
         <div className="mb-4">
-          I'm a full stack developer currently working in the Edmonton, Alberta
-          area. Currently developing and dreaming CRUD projects. Feel free to
-          hit me up through email or on{" "}
-          <a
-            href="https://www.linkedin.com/in/peter-hu-p-eng-57450071/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i>LinkedIn</i>
-          </a>
-          .
-        </div>
-        <div className="mb-3">
-          <Link to="/projects/">
-            <h5>
-              <i>My Code Garage</i>
-            </h5>
-          </Link>
+          <ul>
+            <li>Full stack developer working in the Edmonton, Alberta area</li>
+            <li>Currently developing and dreaming CRUD projects.</li>
+            <li>
+              I can be contacted at:{" "}
+              <a href="mailto:peterh782@gmail.com">
+                <i>email</i>
+              </a>{" "}
+              or{" "}
+              <a
+                href="https://www.linkedin.com/in/peter-hu-p-eng-57450071/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i>LinkedIn</i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
