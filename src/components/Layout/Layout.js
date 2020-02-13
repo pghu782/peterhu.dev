@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="layout">
       <link
         href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
         rel="stylesheet"
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
       <footer>© {new Date().getFullYear()} Peter Hu</footer>
-    </>
+    </div>
   )
 }
 

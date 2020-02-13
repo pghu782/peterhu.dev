@@ -1,4 +1,7 @@
 @import "../../assets/variables";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
 
 /* Styles */
 html {
@@ -12,6 +15,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(248, 248, 248);
+}
+
+.layout {
+  position: relative;
+  overflow-x: hidden;
 }
 
 header {
@@ -33,6 +41,10 @@ header {
       letter-spacing: 0.4px;
     }
   }
+}
+
+ul {
+  list-style: square;
 }
 
 li {
@@ -140,7 +152,7 @@ li {
 footer {
   display: block;
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -148,12 +160,31 @@ footer {
   margin: 0 auto;
 }
 
+.index-image-container {
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 2rem;
+
+    img {
+      width: 94%;
+      height: 285px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
 .description-container {
   max-width: 750px;
   padding: 2rem;
 
-  img {
-    width: 80%;
+  @include media-breakpoint-down(sm) {
+    padding: 1rem;
   }
 }
 
