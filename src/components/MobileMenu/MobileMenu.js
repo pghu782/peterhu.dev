@@ -27,11 +27,7 @@ const MobileMenu = ({ open }) => {
         <a href="/projects">Projects</a>
       </div>
       <div className="row">
-        <button
-          type="button"
-          className="btn btn-circle"
-          onClick={openLink.bind(this, "peterh782@gmail.com")}
-        >
+        <button type="button" className="btn btn-circle">
           <AiOutlineMail />
         </button>
         <a href="peterh782@gmail.com">Email</a>
