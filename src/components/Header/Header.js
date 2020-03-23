@@ -63,7 +63,7 @@ const Header = ({ siteTitle }) => {
                 className="btn btn-circle"
                 onClick={openLink.bind(
                   this,
-                  "https://www.linkedin.com/in/peter-hu-p-eng-57450071/"
+                  "https://www.linkedin.com/in/peter-hu-57450071/"
                 )}
               >
                 <AiOutlineLinkedin />

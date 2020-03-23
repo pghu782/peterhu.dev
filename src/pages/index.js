@@ -14,8 +14,8 @@ const IndexPage = () => (
         </div>
         <div className="mb-4">
           <ul>
-            <li>Full stack developer working in the Edmonton, Alberta area</li>
-            <li>Currently developing and dreaming CRUD projects</li>
+            <li>Full stack developer in the Edmonton, Alberta area</li>
+            <li>Tech agnostic, not picky (except during pull requests...)</li>
             <li>
               I can be contacted through{" "}
               <a href="mailto:peterh782@gmail.com">email</a> or on{" "}
