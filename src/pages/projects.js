@@ -1,6 +1,5 @@
-import React, { useCallback, useState } from "react"
+import React from "react"
 import Zoom from "react-medium-image-zoom"
-import { Controlled as ControlledZoom } from "react-medium-image-zoom"
 import "react-medium-image-zoom/dist/styles.css"
 
 // import { Desktop, Tablet, Mobile } from "../components/media-query/media-query"
@@ -21,12 +20,7 @@ import EzFiller3 from "../images/EzFiller3.png"
 const ProjectPage = () => {
   // const isMobile = useMediaQuery({ maxWidth: 767 })
   const isDesktop = useMediaQuery({ minWidth: 992 })
-  const [isZoomed, setIsZoomed] = useState(false)
-  const handleZoomChange = useCallback(shouldZoom => {
-    setIsZoomed(shouldZoom)
-  }, [])
   const borderStyle = { border: "1px solid rgb(234, 234, 234)" }
-  const smallBorderStyle = { border: "0.75px solid rgb(234, 234, 234)" }
 
   return (
     <Layout>
@@ -47,19 +41,15 @@ const ProjectPage = () => {
               </Zoom>
             </div>
             <div>
-              <ControlledZoom
-                isZoomed={isZoomed}
-                onZoomChange={handleZoomChange}
-                zoomMargin={isDesktop ? 50 : 0}
-              >
+              <Zoom zoomMargin={isDesktop ? 50 : 0}>
                 <img
                   src={EzFiller1}
                   alt="EzFiller detailed view"
                   className="my-2"
                   width={isDesktop ? "125" : "100"}
-                  style={isZoomed ? smallBorderStyle : borderStyle}
+                  style={borderStyle}
                 />
-              </ControlledZoom>
+              </Zoom>
               <span class="mr-3"></span>
               <Zoom>
                 <img
