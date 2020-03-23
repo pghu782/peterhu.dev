@@ -1,1 +1,6 @@
-Initial scaffolding from Gatsby's default starter.
+My personal website. Initial scaffolding created from Gatsby's default starter.
+
+```
+npm install
+gatsby develop
+```
