@@ -12,10 +12,9 @@ const IndexPage = () => (
         <div className="index-image-container text-center">
           <img src={spectre} alt="Spectre Keyboard" />
         </div>
-        <div className="mb-4">
+        <div>
           <ul>
-            <li>Full stack developer in the Edmonton, Alberta area</li>
-            <li>Tech agnostic, not picky (except during pull requests...)</li>
+            <li>Software developer in Edmonton, Alberta</li>
             <li>
               I can be contacted through{" "}
               <a href="mailto:peterh782@gmail.com">email</a> or on{" "}
@@ -26,6 +25,10 @@ const IndexPage = () => (
               >
                 LinkedIn
               </a>
+            </li>
+            <li>
+              Currently building tons of new CMS features at{" "}
+              <a href="https://ama.ab.ca">AMA</a>
             </li>
           </ul>
         </div>
