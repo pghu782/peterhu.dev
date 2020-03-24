@@ -189,6 +189,10 @@ footer {
 
   @include media-breakpoint-down(sm) {
     padding: 1rem;
+
+    li {
+      margin-left: -1.5rem;
+    }
   }
 }
 
