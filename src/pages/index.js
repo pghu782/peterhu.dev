@@ -19,7 +19,7 @@ const IndexPage = () => (
               I can be contacted through{" "}
               <a href="mailto:peterh782@gmail.com">email</a> or on{" "}
               <a
-                href="https://www.linkedin.com/in/peter-hu-p-eng-57450071/"
+                href="https://www.linkedin.com/in/peter-hu-57450071/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
